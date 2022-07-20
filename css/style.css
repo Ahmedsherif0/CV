@@ -262,17 +262,36 @@ Main title
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
   gap:40px;
+}@media(max-width:767px){
+  .footer .container{
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    gap:30px;
+    text-align: center;
+  }
 }
 .footer a{
-  background-color: #363636;
+  background-color: #36363661;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70px;
+  width: 50px;
   border-radius: 50%;
 }
 .footer a i{
-  font-size: 25px;
-  padding: 25px;
+  font-size: 15px;
+  padding: 10px 0 ;
   color: #fff;
+}
+.footer a:hover{
+  background-color: #1787e0;
+}
+.footer .box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+.footer .box h1{
+  color: rgb(165, 165, 165);
+  font-size: 15px;
 }
